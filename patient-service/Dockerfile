@@ -4,7 +4,7 @@ WORKDIR /app
 
 # copy package files and install production deps
 COPY package*.json ./
-RUN npm ci --production
+RUN npm install --production
 
 # copy source
 COPY . .
